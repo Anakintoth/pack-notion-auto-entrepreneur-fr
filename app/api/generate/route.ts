@@ -64,7 +64,7 @@ Concentre-toi sur des actions concrètes applicables cette semaine.`;
 
 export async function POST(req: NextRequest) {
   if (!process.env.GROQ_API_KEY) {
-    console.error('[AutoPack] GROQ_API_KEY is not configured');
+    console.error('[Autonomi] GROQ_API_KEY is not configured');
     return NextResponse.json({ error: 'Service non configuré. Contactez le support.' }, { status: 503 });
   }
 
@@ -104,7 +104,7 @@ export async function POST(req: NextRequest) {
 
   if (!res.ok) {
     const err = await res.text();
-    console.error('[AutoPack] Groq API error:', err);
+    console.error('[Autonomi] Groq API error:', err);
     return NextResponse.json({ error: 'Erreur lors de la génération. Réessayez dans quelques instants.' }, { status: 502 });
   }
 

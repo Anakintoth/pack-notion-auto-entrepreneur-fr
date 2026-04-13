@@ -77,7 +77,7 @@ export default function AIWidget() {
 
   return (
     <div className="ai-widget card glow gradient-border">
-      <p className="text-xs text-gray-500 mb-4 font-mono">Assistant AutoPack IA — démo en direct</p>
+      <p className="text-xs text-gray-500 mb-4 font-mono">Assistant Autonomi IA — démo en direct</p>
 
       {/* Tab bar */}
       <div className="flex gap-2 mb-5 flex-wrap">
@@ -135,9 +135,9 @@ export default function AIWidget() {
             onClick={handleCopy}
             className="absolute top-2 right-2 text-xs px-3 py-1.5 rounded-lg transition-all"
             style={{
-              background: copied ? '#22c55e20' : '#2D6BE420',
-              color: copied ? '#22c55e' : '#2D6BE4',
-              border: `1px solid ${copied ? '#22c55e30' : '#2D6BE430'}`,
+              background: copied ? '#10B98120' : '#7C3AED20',
+              color: copied ? '#10B981' : '#A78BFA',
+              border: `1px solid ${copied ? '#10B98130' : '#7C3AED35'}`,
             }}
           >
             {copied ? '✓ Copié !' : 'Copier'}

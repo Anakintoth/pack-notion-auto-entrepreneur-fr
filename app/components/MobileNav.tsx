@@ -64,9 +64,9 @@ export default function MobileNav() {
       <div
         className="fixed top-0 right-0 h-full w-72 z-50 md:hidden transition-transform duration-300"
         style={{
-          background: 'rgba(13,26,46,0.98)',
+          background: 'rgba(7,6,15,0.97)',
           backdropFilter: 'blur(40px)',
-          borderLeft: '1px solid rgba(255,255,255,0.08)',
+          borderLeft: '1px solid rgba(167,139,250,0.1)',
           transform: open ? 'translateX(0)' : 'translateX(100%)',
         }}
       >

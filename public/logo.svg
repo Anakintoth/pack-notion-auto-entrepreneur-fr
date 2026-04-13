@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 40" width="150" height="40">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139 40" width="139" height="40">
   <rect x="0" y="4" width="40" height="32" rx="8" fill="#2D6BE4"/>
-  <text x="20" y="27" text-anchor="middle" font-size="20">🗂️</text>
-  <text x="52" y="28" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="800" fill="white">AutoPack</text>
+  <text x="20" y="27" text-anchor="middle" font-size="20">🧾</text>
+  <text x="52" y="28" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="800" fill="white">AutoKit</text>
 </svg>
