@@ -63,9 +63,18 @@ Concentre-toi sur des actions concrètes applicables cette semaine.`;
 }
 
 export async function POST(req: NextRequest) {
-  const body = await req.json();
+  if (!process.env.GROQ_API_KEY) {
+    console.error('[AutoPack] GROQ_API_KEY is not configured');
+    return NextResponse.json({ error: 'Service non configuré. Contactez le support.' }, { status: 503 });
+  }
 
-  // Support both simple (prompt) and typed (type + data) modes
+  let body: { prompt?: string; type?: string; data?: Record<string, string> };
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: 'Corps de requête invalide.' }, { status: 400 });
+  }
+
   const rawPrompt: string = body.prompt ?? '';
   const type: string = body.type ?? '';
   const data: Record<string, string> = body.data ?? {};
@@ -73,7 +82,7 @@ export async function POST(req: NextRequest) {
   const userPrompt = type ? buildTypedPrompt(type, data) || rawPrompt : rawPrompt;
 
   if (!userPrompt.trim()) {
-    return NextResponse.json({ error: 'Prompt vide' }, { status: 400 });
+    return NextResponse.json({ error: 'Prompt vide.' }, { status: 400 });
   }
 
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -95,8 +104,8 @@ export async function POST(req: NextRequest) {
 
   if (!res.ok) {
     const err = await res.text();
-    console.error('[IndéKit] Groq API error:', err);
-    return NextResponse.json({ error: 'Erreur API de génération. Réessayez.' }, { status: 502 });
+    console.error('[AutoPack] Groq API error:', err);
+    return NextResponse.json({ error: 'Erreur lors de la génération. Réessayez dans quelques instants.' }, { status: 502 });
   }
 
   const groqData = await res.json();
