@@ -4,12 +4,12 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'AutoKit — Gérez votre activité, libérez votre talent.',
-  description: 'Gérez votre activité, libérez votre talent.',
+  title: 'AutoKit — Tout ce qu'il faut pour lancer son activité',
+  description: 'Tout ce qu'il faut pour lancer son activité',
   icons: { icon: '/favicon.svg' },
   openGraph: {
     title: 'AutoKit',
-    description: 'Gérez votre activité, libérez votre talent.',
+    description: 'Tout ce qu'il faut pour lancer son activité',
     type: 'website',
   },
 };

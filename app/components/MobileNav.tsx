@@ -66,7 +66,7 @@ export default function MobileNav() {
         style={{
           background: 'rgba(7,6,15,0.97)',
           backdropFilter: 'blur(40px)',
-          borderLeft: '1px solid rgba(167,139,250,0.1)',
+          borderLeft: '1px solid rgba(124,58,237,0.15)',
           transform: open ? 'translateX(0)' : 'translateX(100%)',
         }}
       >
