@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 40" width="282" height="40">
-  <rect x="0" y="4" width="40" height="32" rx="8" fill="#f59e0b"/>
-  <text x="20" y="27" text-anchor="middle" font-size="20">🚀</text>
-  <text x="52" y="28" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="800" fill="white">Pack</text><text x="100" y="28" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="400" fill="#f59e0b">Notion Auto Ent</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 40" width="216" height="40">
+  <rect x="0" y="4" width="40" height="32" rx="8" fill="#2D6BE4"/>
+  <text x="20" y="27" text-anchor="middle" font-size="20">🧾</text>
+  <text x="52" y="28" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="800" fill="white">AutoKit</text><text x="136" y="28" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="400" fill="#2D6BE4">Notion</text>
 </svg>

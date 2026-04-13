@@ -1,5 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+/**
+ * POST /api/generate
+ *
+ * Generates auto-entrepreneur-specific content via Groq LLM.
+ *
+ * Body (two modes):
+ *  1. Simple:  { prompt: string }
+ *  2. Typed:   { type: 'facture' | 'urssaf' | 'devis' | 'conseil', data: Record<string, string> }
+ */
+
 const SYSTEM_PROMPT = `Tu es un assistant expert en gestion d'auto-entreprise en France.
 Tu aides les auto-entrepreneurs avec :
 - La rédaction de factures conformes (mentions obligatoires, numérotation)
@@ -14,11 +24,55 @@ Réponds toujours en français, de manière claire, concise et pratique.
 Si on te demande de générer une facture, produis un texte structuré prêt à copier.
 Ne fournis pas de conseil juridique ou fiscal personnalisé — recommande un expert-comptable pour les cas complexes.`;
 
+function buildTypedPrompt(type: string, data: Record<string, string>): string {
+  switch (type) {
+    case 'facture':
+      return `Génère le texte complet d'une facture professionnelle pour un auto-entrepreneur français.
+Client : ${data.client ?? 'Non renseigné'}
+Prestation : ${data.prestation ?? 'Prestation de services'}
+Montant : ${data.montant ?? '0'} €
+Date : ${data.date ?? new Date().toLocaleDateString('fr-FR')}
+N° facture : ${data.numero ?? 'FAC-2026-001'}
+Inclure toutes les mentions légales obligatoires, la mention franchise TVA (art. 293 B CGI), et les conditions de paiement légales.`;
+
+    case 'urssaf':
+      return `Aide-moi à préparer ma déclaration URSSAF.
+Période : ${data.periode ?? 'trimestre en cours'}
+Chiffre d'affaires : ${data.ca ?? '0'} €
+Type d'activité : ${data.activite ?? 'Prestation de services BIC'}
+Calcule les cotisations exactes (taux 2026), la date limite, et les points de vigilance.`;
+
+    case 'devis':
+      return `Génère un modèle de devis professionnel pour un auto-entrepreneur français.
+Client : ${data.client ?? 'Prospect'}
+Prestation : ${data.prestation ?? 'Mission de conseil'}
+Durée estimée : ${data.duree ?? 'À définir'}
+Tarif : ${data.tarif ?? 'Non précisé'}
+Le devis doit être professionnel, inclure une date de validité, les conditions d'acceptation et les mentions légales.`;
+
+    case 'conseil':
+      return `Donne-moi 5 conseils pratiques et actionnables pour optimiser ma gestion AE.
+Secteur : ${data.secteur ?? 'Services intellectuels'}
+CA annuel estimé : ${data.ca ?? '0'} €
+Problématique : ${data.probleme ?? 'Organisation générale'}
+Concentre-toi sur des actions concrètes applicables cette semaine.`;
+
+    default:
+      return '';
+  }
+}
+
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  const prompt = body.prompt || '';
 
-  if (!prompt.trim()) {
+  // Support both simple (prompt) and typed (type + data) modes
+  const rawPrompt: string = body.prompt ?? '';
+  const type: string = body.type ?? '';
+  const data: Record<string, string> = body.data ?? {};
+
+  const userPrompt = type ? buildTypedPrompt(type, data) || rawPrompt : rawPrompt;
+
+  if (!userPrompt.trim()) {
     return NextResponse.json({ error: 'Prompt vide' }, { status: 400 });
   }
 
@@ -32,21 +86,22 @@ export async function POST(req: NextRequest) {
       model: 'llama-3.3-70b-versatile',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
-        { role: 'user', content: prompt },
+        { role: 'user', content: userPrompt },
       ],
-      max_tokens: 1024,
+      max_tokens: 1500,
       temperature: 0.7,
     }),
   });
 
   if (!res.ok) {
     const err = await res.text();
-    console.error('Groq API error:', err);
-    return NextResponse.json({ error: 'Erreur API' }, { status: 502 });
+    console.error('[IndéKit] Groq API error:', err);
+    return NextResponse.json({ error: 'Erreur API de génération. Réessayez.' }, { status: 502 });
   }
 
-  const data = await res.json();
+  const groqData = await res.json();
   return NextResponse.json({
-    result: data.choices?.[0]?.message?.content ?? '',
+    result: groqData.choices?.[0]?.message?.content ?? '',
+    type: type || 'prompt',
   });
 }
