@@ -32,8 +32,8 @@ export default function Home() {
             <span className="gradient-text">AutoKit</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto leading-relaxed reveal reveal-d2">Votre admin auto-entrepreneur, enfin simplifiée</p>
-          <p className="text-gray-500 mb-12 max-w-lg mx-auto reveal reveal-d2">AutoKit centralise toute la gestion administrative de l'auto-entrepreneur français dans Notion — facturation, déclarations, suivi CA et obligations légales.</p>
+          <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto leading-relaxed reveal reveal-d2">Votre bureau freelance, prêt en un clic</p>
+          <p className="text-gray-500 mb-12 max-w-lg mx-auto reveal reveal-d2">AutoKit centralise tous les outils Notion essentiels pour les auto-entrepreneurs français : facturation, suivi fiscal, clients et projets — sans prise de tête.</p>
 
           <div className="flex gap-4 justify-center flex-wrap reveal reveal-d3">
             <a href="#pricing" className="btn-primary"><span>🧾 Commencer gratuitement</span></a>
@@ -41,9 +41,9 @@ export default function Home() {
           </div>
 
           <div className="mt-16 flex justify-center gap-8 text-sm text-gray-600 reveal reveal-d4">
-            <div className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#9679;</span> 500+ utilisateurs</div>
-            <div className="flex items-center gap-2"><span style={{ color: "#3B82F6" }}>&#9679;</span> 4.9/5 satisfaction</div>
-            <div className="flex items-center gap-2"><span style={{ color: "#F59E0B" }}>&#9679;</span> Support 24/7</div>
+            <div className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#9679;</span> 500+ utilisateurs</div>
+            <div className="flex items-center gap-2"><span style={{ color: "#6B9EF5" }}>&#9679;</span> 4.9/5 satisfaction</div>
+            <div className="flex items-center gap-2"><span style={{ color: "#F5A623" }}>&#9679;</span> Support 24/7</div>
           </div>
         </div>
       </section>
@@ -52,23 +52,23 @@ export default function Home() {
       <section className="py-16 px-6 relative">
         <div className="max-w-4xl mx-auto">
           <div className="card glow p-1 rounded-2xl reveal">
-            <div className="rounded-xl overflow-hidden" style={{ background: "#141E35" }}>
-              <div className="flex items-center gap-2 px-4 py-3 border-b" style={{ borderColor: "#2563EB15" }}>
+            <div className="rounded-xl overflow-hidden" style={{ background: "#152249" }}>
+              <div className="flex items-center gap-2 px-4 py-3 border-b" style={{ borderColor: "#2D6BE415" }}>
                 <div className="w-3 h-3 rounded-full" style={{ background: "#f85149" }} />
                 <div className="w-3 h-3 rounded-full" style={{ background: "#d29922" }} />
                 <div className="w-3 h-3 rounded-full" style={{ background: "#3fb950" }} />
                 <span className="ml-3 text-xs text-gray-600">autokit.app</span>
               </div>
               <div className="p-8 space-y-4">
-                <div className="h-4 rounded-full w-3/4" style={{ background: "#2563EB15" }} />
-                <div className="h-4 rounded-full w-1/2" style={{ background: "#2563EB10" }} />
+                <div className="h-4 rounded-full w-3/4" style={{ background: "#2D6BE415" }} />
+                <div className="h-4 rounded-full w-1/2" style={{ background: "#2D6BE410" }} />
                 <div className="grid grid-cols-3 gap-4 mt-6">
-                  <div className="h-24 rounded-lg" style={{ background: "#2563EB08", border: "1px solid #2563EB15" }} />
-                  <div className="h-24 rounded-lg" style={{ background: "#3B82F608", border: "1px solid #3B82F615" }} />
-                  <div className="h-24 rounded-lg" style={{ background: "#F59E0B08", border: "1px solid #F59E0B15" }} />
+                  <div className="h-24 rounded-lg" style={{ background: "#2D6BE408", border: "1px solid #2D6BE415" }} />
+                  <div className="h-24 rounded-lg" style={{ background: "#6B9EF508", border: "1px solid #6B9EF515" }} />
+                  <div className="h-24 rounded-lg" style={{ background: "#F5A62308", border: "1px solid #F5A62315" }} />
                 </div>
-                <div className="h-4 rounded-full w-2/3 mt-4" style={{ background: "#2563EB10" }} />
-                <div className="h-4 rounded-full w-1/3" style={{ background: "#2563EB08" }} />
+                <div className="h-4 rounded-full w-2/3 mt-4" style={{ background: "#2D6BE410" }} />
+                <div className="h-4 rounded-full w-1/3" style={{ background: "#2D6BE408" }} />
               </div>
             </div>
           </div>
@@ -85,16 +85,16 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="card reveal reveal-d1">
-              <p className="text-lg font-medium leading-relaxed">🧾 Modèles de factures conformes à la législation française</p>
+              <p className="text-lg font-medium leading-relaxed">🧾 Modèles de factures conformes au droit français</p>
             </div>
             <div className="card reveal reveal-d2">
-              <p className="text-lg font-medium leading-relaxed">📊 Tableau de bord CA avec seuils TVA et cotisations en temps réel</p>
+              <p className="text-lg font-medium leading-relaxed">📊 Tableau de bord CA, charges et TVA en temps réel</p>
             </div>
             <div className="card reveal reveal-d3">
-              <p className="text-lg font-medium leading-relaxed">📅 Calendrier des déclarations URSSAF et impôts pré-rempli</p>
+              <p className="text-lg font-medium leading-relaxed">🗂️ Gestion clients et projets intégrée dans Notion</p>
             </div>
             <div className="card reveal reveal-d4">
-              <p className="text-lg font-medium leading-relaxed">⚡ Pack Notion prêt à l'emploi, dupliquable en un clic</p>
+              <p className="text-lg font-medium leading-relaxed">📅 Rappels déclarations URSSAF et échéances fiscales</p>
             </div>
           </div>
         </div>
@@ -115,36 +115,36 @@ export default function Home() {
               <div className="text-4xl font-extrabold mb-1">0<span className="text-lg text-gray-500">EUR</span></div>
               <p className="text-gray-500 text-sm mb-8">Pour toujours</p>
               <ul className="text-sm text-gray-400 space-y-3 mb-8 text-left">
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Fonctions de base</li>
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> 5 utilisations / jour</li>
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Support communautaire</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Fonctions de base</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> 5 utilisations / jour</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Support communautaire</li>
               </ul>
               <a href="#" className="btn-secondary w-full block text-center !text-sm">Commencer</a>
             </div>
             {/* Pro — gradient border */}
             <div className="card gradient-border text-center relative glow reveal reveal-d2 md:-mt-4 md:pb-10">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold" style={{ background: "linear-gradient(135deg, #2563EB, #3B82F6)", color: "white" }}>POPULAIRE</div>
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold" style={{ background: "linear-gradient(135deg, #2D6BE4, #6B9EF5)", color: "white" }}>POPULAIRE</div>
               <h3 className="font-bold text-lg mb-2 mt-2">Autonome</h3>
               <div className="text-5xl font-extrabold mb-1">9.99<span className="text-lg text-gray-500">EUR</span></div>
               <p className="text-gray-500 text-sm mb-8">/ mois</p>
               <ul className="text-sm text-gray-400 space-y-3 mb-8 text-left">
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Tout du plan Découverte</li>
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Utilisations illimitees</li>
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Support prioritaire</li>
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Export PDF / API</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Tout du plan Découverte</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Utilisations illimitees</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Support prioritaire</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Export PDF / API</li>
               </ul>
               <a href="#" className="btn-primary w-full block text-center !text-sm"><span>Souscrire</span></a>
             </div>
             {/* Enterprise */}
             <div className="card text-center reveal reveal-d3">
-              <h3 className="font-bold text-lg mb-2">Agence</h3>
-              <div className="text-4xl font-extrabold mb-1">29.99<span className="text-lg text-gray-500">EUR</span></div>
+              <h3 className="font-bold text-lg mb-2">Studio</h3>
+              <div className="text-4xl font-extrabold mb-1">24.99<span className="text-lg text-gray-500">EUR</span></div>
               <p className="text-gray-500 text-sm mb-8">/ mois</p>
               <ul className="text-sm text-gray-400 space-y-3 mb-8 text-left">
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Tout du plan Autonome</li>
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Multi-utilisateurs</li>
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> SLA garanti</li>
-                <li className="flex items-center gap-2"><span style={{ color: "#2563EB" }}>&#10003;</span> Integration sur mesure</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Tout du plan Autonome</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Multi-utilisateurs</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> SLA garanti</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Integration sur mesure</li>
               </ul>
               <a href="#" className="btn-secondary w-full block text-center !text-sm">Contacter</a>
             </div>
@@ -161,35 +161,35 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="card reveal reveal-d1">
-              <div className="flex gap-1 mb-4" style={{ color: "#F59E0B" }}>*****</div>
-              <p className="text-gray-300 italic mb-6 leading-relaxed">"En 10 minutes j'avais toute mon admin structurée. Je n'aurais pas cru que Notion pouvait remplacer mon expert-comptable pour le quotidien."</p>
+              <div className="flex gap-1 mb-4" style={{ color: "#F5A623" }}>*****</div>
+              <p className="text-gray-300 italic mb-6 leading-relaxed">"J'ai enfin arrêté de stresser pour mes déclarations. Tout est là, clair et simple."</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2563EB20", color: "#2563EB" }}>C</div>
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2D6BE420", color: "#2D6BE4" }}>C</div>
                 <div>
                   <p className="font-semibold text-sm">Camille Rousseau</p>
-                  <p className="text-xs text-gray-500">Graphiste freelance</p>
+                  <p className="text-xs text-gray-500">Designer freelance</p>
                 </div>
               </div>
             </div>
             <div className="card reveal reveal-d2">
-              <div className="flex gap-1 mb-4" style={{ color: "#F59E0B" }}>*****</div>
-              <p className="text-gray-300 italic mb-6 leading-relaxed">"Le suivi du CA avec les seuils TVA m'a évité une mauvaise surprise. AutoKit m'a littéralement sauvé d'un redressement."</p>
+              <div className="flex gap-1 mb-4" style={{ color: "#F5A623" }}>*****</div>
+              <p className="text-gray-300 italic mb-6 leading-relaxed">"AutoKit m'a économisé des heures chaque mois. Mes factures partent en deux minutes chrono."</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2563EB20", color: "#2563EB" }}>T</div>
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2D6BE420", color: "#2D6BE4" }}>T</div>
                 <div>
-                  <p className="font-semibold text-sm">Thomas Bernardin</p>
+                  <p className="font-semibold text-sm">Thomas Mercier</p>
                   <p className="text-xs text-gray-500">Développeur indépendant</p>
                 </div>
               </div>
             </div>
             <div className="card reveal reveal-d3">
-              <div className="flex gap-1 mb-4" style={{ color: "#F59E0B" }}>*****</div>
-              <p className="text-gray-300 italic mb-6 leading-relaxed">"Enfin un outil pensé pour les auto-entrepreneurs français, pas une traduction approximative d'un produit américain."</p>
+              <div className="flex gap-1 mb-4" style={{ color: "#F5A623" }}>*****</div>
+              <p className="text-gray-300 italic mb-6 leading-relaxed">"Le pack le plus complet que j'ai trouvé pour gérer mon activité sur Notion. Indispensable."</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2563EB20", color: "#2563EB" }}>S</div>
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2D6BE420", color: "#2D6BE4" }}>S</div>
                 <div>
-                  <p className="font-semibold text-sm">Sophie Marchand</p>
-                  <p className="text-xs text-gray-500">Coach professionnelle</p>
+                  <p className="font-semibold text-sm">Sophie Langlois</p>
+                  <p className="text-xs text-gray-500">Consultante marketing</p>
                 </div>
               </div>
             </div>
@@ -207,24 +207,24 @@ export default function Home() {
           <div className="space-y-4">
             <details className="card group cursor-pointer reveal reveal-d1">
               <summary className="font-semibold list-none flex justify-between items-center">
-                Ai-je besoin d'une expérience Notion pour utiliser AutoKit ?
+                Dois-je avoir des connaissances en comptabilité pour utiliser AutoKit ?
                 <span className="text-gray-500 group-open:rotate-45 transition-transform duration-300 text-xl">+</span>
               </summary>
-              <p className="mt-4 text-gray-400 leading-relaxed">Non, le pack est conçu pour être utilisable dès la duplication, même sans connaissance préalable de Notion. Un guide de démarrage est inclus.</p>
+              <p className="mt-4 text-gray-400 leading-relaxed">Non, AutoKit est conçu pour les non-comptables. Les modèles sont pré-configurés et les calculs sont automatiques.</p>
             </details>
             <details className="card group cursor-pointer reveal reveal-d2">
               <summary className="font-semibold list-none flex justify-between items-center">
-                Le pack est-il mis à jour en cas de changement de législation ?
+                Le pack est-il mis à jour en cas de changement de la législation française ?
                 <span className="text-gray-500 group-open:rotate-45 transition-transform duration-300 text-xl">+</span>
               </summary>
-              <p className="mt-4 text-gray-400 leading-relaxed">Oui, tous les acheteurs reçoivent les mises à jour gratuitement. Nous suivons les évolutions de la réglementation URSSAF et fiscale en temps réel.</p>
+              <p className="mt-4 text-gray-400 leading-relaxed">Oui, tous les acheteurs reçoivent gratuitement les mises à jour liées aux évolutions réglementaires (URSSAF, TVA, etc.).</p>
             </details>
             <details className="card group cursor-pointer reveal reveal-d3">
               <summary className="font-semibold list-none flex justify-between items-center">
-                Ce pack convient-il à toutes les catégories d'auto-entrepreneurs ?
+                Est-ce que je dois avoir une licence Notion payante ?
                 <span className="text-gray-500 group-open:rotate-45 transition-transform duration-300 text-xl">+</span>
               </summary>
-              <p className="mt-4 text-gray-400 leading-relaxed">Oui, AutoKit couvre les trois régimes : vente de marchandises, prestations de services BIC et prestations de services BNC, avec les taux de cotisations correspondants.</p>
+              <p className="mt-4 text-gray-400 leading-relaxed">Non, AutoKit fonctionne avec le plan gratuit de Notion. Une licence Notion payante débloque des fonctionnalités bonus, mais n'est pas obligatoire.</p>
             </details>
           </div>
         </div>
@@ -236,7 +236,7 @@ export default function Home() {
           <div className="py-4">
             <span className="text-4xl mb-6 block">🧾</span>
             <h2 className="text-3xl font-bold mb-4">Pret a commencer ?</h2>
-            <p className="text-gray-400 mb-8 max-w-md mx-auto">Votre admin auto-entrepreneur, enfin simplifiée</p>
+            <p className="text-gray-400 mb-8 max-w-md mx-auto">Votre bureau freelance, prêt en un clic</p>
             <a href="#pricing" className="btn-primary"><span>Essayer AutoKit gratuitement</span></a>
           </div>
         </div>
