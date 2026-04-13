@@ -32,8 +32,8 @@ export default function Home() {
             <span className="gradient-text">AutoKit</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto leading-relaxed reveal reveal-d2">Tout ce qu'il faut pour lancer son activité</p>
-          <p className="text-gray-500 mb-12 max-w-lg mx-auto reveal reveal-d2">AutoKit centralise tous les outils Notion essentiels pour gérer son activité d'auto-entrepreneur français sans se perdre dans la paperasse.</p>
+          <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto leading-relaxed reveal reveal-d2">Tout votre business en un seul endroit</p>
+          <p className="text-gray-500 mb-12 max-w-lg mx-auto reveal reveal-d2">AutoKit centralise toute la gestion administrative de l'auto-entrepreneur français dans Notion — devis, factures, suivi CA et obligations légales.</p>
 
           <div className="flex gap-4 justify-center flex-wrap reveal reveal-d3">
             <a href="#pricing" className="btn-primary"><span>🧾 Commencer gratuitement</span></a>
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="mt-16 flex justify-center gap-8 text-sm text-gray-600 reveal reveal-d4">
             <div className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#9679;</span> 500+ utilisateurs</div>
             <div className="flex items-center gap-2"><span style={{ color: "#5B8FF0" }}>&#9679;</span> 4.9/5 satisfaction</div>
-            <div className="flex items-center gap-2"><span style={{ color: "#F5A623" }}>&#9679;</span> Support 24/7</div>
+            <div className="flex items-center gap-2"><span style={{ color: "#FF6B35" }}>&#9679;</span> Support 24/7</div>
           </div>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default function Home() {
       <section className="py-16 px-6 relative">
         <div className="max-w-4xl mx-auto">
           <div className="card glow p-1 rounded-2xl reveal">
-            <div className="rounded-xl overflow-hidden" style={{ background: "#152340" }}>
+            <div className="rounded-xl overflow-hidden" style={{ background: "#152347" }}>
               <div className="flex items-center gap-2 px-4 py-3 border-b" style={{ borderColor: "#2D6BE415" }}>
                 <div className="w-3 h-3 rounded-full" style={{ background: "#f85149" }} />
                 <div className="w-3 h-3 rounded-full" style={{ background: "#d29922" }} />
@@ -65,7 +65,7 @@ export default function Home() {
                 <div className="grid grid-cols-3 gap-4 mt-6">
                   <div className="h-24 rounded-lg" style={{ background: "#2D6BE408", border: "1px solid #2D6BE415" }} />
                   <div className="h-24 rounded-lg" style={{ background: "#5B8FF008", border: "1px solid #5B8FF015" }} />
-                  <div className="h-24 rounded-lg" style={{ background: "#F5A62308", border: "1px solid #F5A62315" }} />
+                  <div className="h-24 rounded-lg" style={{ background: "#FF6B3508", border: "1px solid #FF6B3515" }} />
                 </div>
                 <div className="h-4 rounded-full w-2/3 mt-4" style={{ background: "#2D6BE410" }} />
                 <div className="h-4 rounded-full w-1/3" style={{ background: "#2D6BE408" }} />
@@ -85,16 +85,16 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="card reveal reveal-d1">
-              <p className="text-lg font-medium leading-relaxed">🧾 Suivi des factures et devis prêt à l'emploi</p>
+              <p className="text-lg font-medium leading-relaxed">🧾 Modèles de devis et factures conformes à la législation française</p>
             </div>
             <div className="card reveal reveal-d2">
-              <p className="text-lg font-medium leading-relaxed">📊 Tableau de bord chiffre d'affaires et plafonds URSSAF</p>
+              <p className="text-lg font-medium leading-relaxed">📊 Tableau de bord CA avec suivi des seuils de franchise TVA</p>
             </div>
             <div className="card reveal reveal-d3">
-              <p className="text-lg font-medium leading-relaxed">🗓️ Agenda clients et gestion de projets intégrée</p>
+              <p className="text-lg font-medium leading-relaxed">📅 Rappels automatiques des déclarations URSSAF et CFE</p>
             </div>
             <div className="card reveal reveal-d4">
-              <p className="text-lg font-medium leading-relaxed">📁 Templates conformes à la réglementation française</p>
+              <p className="text-lg font-medium leading-relaxed">⚡ Onboarding en 5 minutes, prêt à facturer dès le premier jour</p>
             </div>
           </div>
         </div>
@@ -124,8 +124,8 @@ export default function Home() {
             {/* Pro — gradient border */}
             <div className="card gradient-border text-center relative glow reveal reveal-d2 md:-mt-4 md:pb-10">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold" style={{ background: "linear-gradient(135deg, #2D6BE4, #5B8FF0)", color: "white" }}>POPULAIRE</div>
-              <h3 className="font-bold text-lg mb-2 mt-2">Autonome</h3>
-              <div className="text-5xl font-extrabold mb-1">9.99<span className="text-lg text-gray-500">EUR</span></div>
+              <h3 className="font-bold text-lg mb-2 mt-2">Solo Pro</h3>
+              <div className="text-5xl font-extrabold mb-1">7.99<span className="text-lg text-gray-500">EUR</span></div>
               <p className="text-gray-500 text-sm mb-8">/ mois</p>
               <ul className="text-sm text-gray-400 space-y-3 mb-8 text-left">
                 <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Tout du plan Découverte</li>
@@ -137,11 +137,11 @@ export default function Home() {
             </div>
             {/* Enterprise */}
             <div className="card text-center reveal reveal-d3">
-              <h3 className="font-bold text-lg mb-2">Cabinet</h3>
-              <div className="text-4xl font-extrabold mb-1">29.99<span className="text-lg text-gray-500">EUR</span></div>
+              <h3 className="font-bold text-lg mb-2">Studio</h3>
+              <div className="text-4xl font-extrabold mb-1">19.99<span className="text-lg text-gray-500">EUR</span></div>
               <p className="text-gray-500 text-sm mb-8">/ mois</p>
               <ul className="text-sm text-gray-400 space-y-3 mb-8 text-left">
-                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Tout du plan Autonome</li>
+                <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Tout du plan Solo Pro</li>
                 <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Multi-utilisateurs</li>
                 <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> SLA garanti</li>
                 <li className="flex items-center gap-2"><span style={{ color: "#2D6BE4" }}>&#10003;</span> Integration sur mesure</li>
@@ -161,35 +161,35 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="card reveal reveal-d1">
-              <div className="flex gap-1 mb-4" style={{ color: "#F5A623" }}>*****</div>
-              <p className="text-gray-300 italic mb-6 leading-relaxed">"En 20 minutes j'avais tout configuré. Enfin un outil qui comprend les vrais besoins d'un auto-entrepreneur."</p>
+              <div className="flex gap-1 mb-4" style={{ color: "#FF6B35" }}>*****</div>
+              <p className="text-gray-300 italic mb-6 leading-relaxed">"Enfin un outil qui parle vraiment aux auto-entrepreneurs. J'ai divisé mon temps admin par trois dès le premier mois."</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2D6BE420", color: "#2D6BE4" }}>C</div>
                 <div>
-                  <p className="font-semibold text-sm">Camille Lefèvre</p>
+                  <p className="font-semibold text-sm">Camille Rousseau</p>
                   <p className="text-xs text-gray-500">Graphiste freelance</p>
                 </div>
               </div>
             </div>
             <div className="card reveal reveal-d2">
-              <div className="flex gap-1 mb-4" style={{ color: "#F5A623" }}>*****</div>
-              <p className="text-gray-300 italic mb-6 leading-relaxed">"Le tableau de bord URSSAF m'a sauvé la mise. Je sais exactement où j'en suis à chaque instant."</p>
+              <div className="flex gap-1 mb-4" style={{ color: "#FF6B35" }}>*****</div>
+              <p className="text-gray-300 italic mb-6 leading-relaxed">"Le suivi du chiffre d'affaires et les alertes TVA m'ont sauvé la mise. Je recommande à tous mes collègues freelances."</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2D6BE420", color: "#2D6BE4" }}>T</div>
                 <div>
-                  <p className="font-semibold text-sm">Thomas Moreau</p>
-                  <p className="text-xs text-gray-500">Consultant marketing indépendant</p>
+                  <p className="font-semibold text-sm">Thomas Morel</p>
+                  <p className="text-xs text-gray-500">Développeur web indépendant</p>
                 </div>
               </div>
             </div>
             <div className="card reveal reveal-d3">
-              <div className="flex gap-1 mb-4" style={{ color: "#F5A623" }}>*****</div>
-              <p className="text-gray-300 italic mb-6 leading-relaxed">"Mes factures sont envoyées en deux clics, mes relances automatiques. Je gagne un temps précieux chaque semaine."</p>
+              <div className="flex gap-1 mb-4" style={{ color: "#FF6B35" }}>*****</div>
+              <p className="text-gray-300 italic mb-6 leading-relaxed">"Simple, élégant, et 100% adapté au droit français. AutoKit c'est le Notion qu'on attendait tous."</p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2D6BE420", color: "#2D6BE4" }}>S</div>
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style={{ background: "#2D6BE420", color: "#2D6BE4" }}>L</div>
                 <div>
-                  <p className="font-semibold text-sm">Sophie Aubry</p>
-                  <p className="text-xs text-gray-500">Coach professionnelle</p>
+                  <p className="font-semibold text-sm">Léa Fontaine</p>
+                  <p className="text-xs text-gray-500">Coach business</p>
                 </div>
               </div>
             </div>
@@ -207,24 +207,24 @@ export default function Home() {
           <div className="space-y-4">
             <details className="card group cursor-pointer reveal reveal-d1">
               <summary className="font-semibold list-none flex justify-between items-center">
-                Faut-il maîtriser Notion pour utiliser AutoKit ?
+                AutoKit est-il à jour avec la législation française en vigueur ?
                 <span className="text-gray-500 group-open:rotate-45 transition-transform duration-300 text-xl">+</span>
               </summary>
-              <p className="mt-4 text-gray-400 leading-relaxed">Non, AutoKit est conçu pour les débutants comme pour les utilisateurs avancés. Chaque template est livré avec un guide de prise en main pas à pas.</p>
+              <p className="mt-4 text-gray-400 leading-relaxed">Oui, nos modèles et seuils sont mis à jour à chaque changement légal (TVA, URSSAF, plafonds micro-entreprise) afin que vous soyez toujours en conformité.</p>
             </details>
             <details className="card group cursor-pointer reveal reveal-d2">
               <summary className="font-semibold list-none flex justify-between items-center">
-                Les templates sont-ils conformes à la législation française ?
+                Ai-je besoin d'un compte Notion payant pour utiliser AutoKit ?
                 <span className="text-gray-500 group-open:rotate-45 transition-transform duration-300 text-xl">+</span>
               </summary>
-              <p className="mt-4 text-gray-400 leading-relaxed">Oui, tous nos documents (factures, devis, CGV) respectent les mentions légales obligatoires pour les auto-entrepreneurs en France et sont mis à jour régulièrement.</p>
+              <p className="mt-4 text-gray-400 leading-relaxed">Non, AutoKit fonctionne avec un compte Notion gratuit. Nous utilisons uniquement des fonctionnalités disponibles dans le plan Free de Notion.</p>
             </details>
             <details className="card group cursor-pointer reveal reveal-d3">
               <summary className="font-semibold list-none flex justify-between items-center">
-                Puis-je utiliser AutoKit sur mobile ?
+                Puis-je personnaliser les modèles avec mon logo et mes couleurs ?
                 <span className="text-gray-500 group-open:rotate-45 transition-transform duration-300 text-xl">+</span>
               </summary>
-              <p className="mt-4 text-gray-400 leading-relaxed">Absolument. Notion fonctionne sur iOS et Android, ce qui vous permet de consulter et mettre à jour votre tableau de bord depuis n'importe où.</p>
+              <p className="mt-4 text-gray-400 leading-relaxed">Absolument. Tous les modèles sont entièrement personnalisables dans Notion — ajoutez votre logo, vos coordonnées et vos couleurs en quelques clics.</p>
             </details>
           </div>
         </div>
@@ -236,7 +236,7 @@ export default function Home() {
           <div className="py-4">
             <span className="text-4xl mb-6 block">🧾</span>
             <h2 className="text-3xl font-bold mb-4">Pret a commencer ?</h2>
-            <p className="text-gray-400 mb-8 max-w-md mx-auto">Tout ce qu'il faut pour lancer son activité</p>
+            <p className="text-gray-400 mb-8 max-w-md mx-auto">Tout votre business en un seul endroit</p>
             <a href="#pricing" className="btn-primary"><span>Essayer AutoKit gratuitement</span></a>
           </div>
         </div>
