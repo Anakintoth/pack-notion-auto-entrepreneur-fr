@@ -77,7 +77,7 @@ export default function AIWidget() {
 
   return (
     <div className="ai-widget card glow gradient-border">
-      <p className="text-xs text-gray-500 mb-4 font-mono">Assistant Autonomi IA — démo en direct</p>
+      <p className="text-xs text-gray-500 mb-4 font-mono">AutoKit IA — démo en direct (alimenté par Groq)</p>
 
       {/* Tab bar */}
       <div className="flex gap-2 mb-5 flex-wrap">

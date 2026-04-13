@@ -87,7 +87,7 @@ export default function MobileNav() {
             className="btn-primary mt-6 text-center !text-sm !py-3 !rounded-xl"
             onClick={() => setOpen(false)}
           >
-            <span>Obtenir le pack — 27 €</span>
+            <span>🧾 Obtenir le pack</span>
           </a>
         </nav>
       </div>
